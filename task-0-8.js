@@ -2,9 +2,6 @@ function numberToHours(number) {
   let hours = Math.round(number / 60);
   let minutes = number % 60;
 
-  console.log(hours);
-  console.log(minutes);
-
   let time = hours + " hours" + " : " + minutes + " minutes";
 
   if (hours > 1 && minutes > 1) {
@@ -19,8 +16,6 @@ function numberToHours(number) {
     time = hours + " hour " + " : " + minutes + " minute";
     console.log(time);
   }
-
-  console.log;
 }
 
 numberToHours(133);
