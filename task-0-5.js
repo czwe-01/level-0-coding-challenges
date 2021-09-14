@@ -7,7 +7,7 @@ function areaOfTriangle(sideA, sideB, sideC) {
         (semiPerimeter - sideB) *
         (semiPerimeter - sideC))
   );
-  console.log(area);
+  return area;
 }
 
 areaOfTriangle(7, 9, 11);

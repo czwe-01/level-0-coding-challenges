@@ -5,7 +5,7 @@ function maximum() {
       max = arguments[i];
     }
   }
-  console.log(max);
+  return max;
 }
 
 maximum(2, 551, 1, 60, 67, 33, 109);
