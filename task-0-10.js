@@ -8,20 +8,18 @@ function findCommonCharacters(string1, string2) {
     stringChars = string2.split("");
   }
 
-  let commonCharacters = "";
+  let commonCharacters = new Array();
 
   for (let i = 0; i < string2.length + string1.length; i++) {
     if (
       stringChars.includes(regex[i]) &&
       !commonCharacters.includes(regex[i])
     ) {
-      //This if executes if the character is not already in the commonCharacters
-      commonCharacters += regex[i];
+      //This if executes if the character matches and is not already in the commonCharacters
+      commonCharacters.push(regex[i]);
     }
   }
-  console.log(commonCharacters);
+  console.log("Common letters: " + commonCharacters.toString());
 }
 
-findCommonCharacters("outer", "compuuuutttereer");
-findCommonCharacters("zink", "compuuuutttereer");
 findCommonCharacters("computer", "house");
